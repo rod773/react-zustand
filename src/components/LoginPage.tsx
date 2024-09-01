@@ -25,6 +25,12 @@ export const LoginPage = () => {
       ) : (
         <div>No authenticated</div>
       )}
+
+      {authStatus === "authenticated" ? (
+        <button onClick={logout}> Logout</button>
+      ) : (
+        <button onClick={() => login("rod@gmail.com", "123")}> Login</button>
+      )}
     </>
   );
 };

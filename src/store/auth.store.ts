@@ -27,6 +27,6 @@ export const useAuthStore = create<AuthState>()((set) => ({
     });
   },
   logout: () => {
-    set({ status: "unauthenticated" });
+    set({ status: "unauthenticated", token: undefined, user: undefined });
   },
 }));

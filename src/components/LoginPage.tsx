@@ -10,12 +10,6 @@ export const LoginPage = () => {
 
   const user = useAuthStore((state) => state.user);
 
-  useEffect(() => {
-    setTimeout(() => {
-      logout();
-    }, 1500);
-  });
-
   return (
     <>
       <h3> LoginPage </h3>
